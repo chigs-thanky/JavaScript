@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scope</title>
+</head>
+
+<body>
+
+  <script>
+    function example() {
+      if (true) {
+        var a = 1;
+        var b = 2;
+        var name = "Chirag";
+        var float = 3.14;
+        var char = "AB";
+      }
+
+      console.log(a); // ✅ Works (var is function-scope)
+      console.log(b); // ❌ Error (let is block-scoped)
+      console.log(name);
+      console.log(float);
+      console.log(char);
+      window.alert(name);
+    }
+    example();
+  </script>
+</body>
+
+</html>
