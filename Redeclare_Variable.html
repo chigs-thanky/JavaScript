@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redeclaration of variable</title>
+</head>
+
+<body>
+    <h1 id="Hx"></h1>
+    <h1 id="Hy"></h1>
+</body>
+<script>
+    var x = 5; //Here, x = 5;
+    {
+        var x = 10 //Here, x = 10;
+    }
+    // Here, x = 10 because var is function-scoped
+    document.getElementById("Hx").innerHTML = "x: " + x;
+
+    let y = 30; //Here, y = 30;
+    {
+        let y = 20; //Here, y = 20;
+        document.getElementById("Hy").innerHTML = "y: " + y;
+    }
+    //Here, y = 30 because let is limited to block.
+    // document.getElementById("Hy").innerHTML = "y: " + y; //This line will give output 30
+
+</script>
+
+</html>
