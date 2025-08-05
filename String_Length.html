@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Length</title>
+</head>
+
+<body>
+
+    <p id="name" style="font-size: 30px;"></p>
+    <p id="length" style="font-size: 30px;"></p>
+    <p id="input" style="font-size: 30px;"></p>
+    <p id="input_count" style="font-size: 30px;"></p>
+    <script>
+        var name = "Chirag";
+        // alert(name);
+        var promPt = prompt("Enter your name: ");
+        document.getElementById("name").innerHTML = "Name: " + name;
+        document.getElementById("length").innerHTML = "Length: " + name.length;
+        document.getElementById("input").innerHTML = "Entered name: " + promPt;
+        document.getElementById("input_count").innerHTML = "Length: " + promPt.length;
+    </script>
+</body>
+
+</html>
