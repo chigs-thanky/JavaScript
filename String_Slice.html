@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Slice</title>
+</head>
+
+<body>
+
+    <p id="show" style="font-size: 30px;"></p>
+    <p id="show2" style="font-size: 30px;"></p>
+    <p id="show3" style="font-size: 30px;"></p>
+    <p id="show4" style="font-size: 30px;"></p>
+
+    <script>
+        var name = "Farhannitrade";
+        var name2 = "PreRajulization";
+        // alert(name);
+        document.getElementById("show").innerHTML = "String: " + name;
+        document.getElementById("show3").innerHTML = "String: " + name.slice(0, 6);
+        document.getElementById("show2").innerHTML = "String: " + name2;
+        document.getElementById("show4").innerHTML = "String: " + name2.slice(3, 7);
+
+    </script>
+</body>
+
+</html>

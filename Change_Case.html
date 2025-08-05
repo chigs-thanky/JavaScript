@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Case</title>
+</head>
+
+<body>
+    <p id="demo" style="font-size: 30px;"></p>
+    <p id="upper" style="font-size: 30px;"></p>
+    <p id="lower" style="font-size: 30px;"></p>
+    <script>
+        var name = prompt("Enter your name:");
+
+        document.getElementById("demo").innerHTML = name;
+        document.getElementById("upper").innerHTML = name.toUpperCase();
+        document.getElementById("lower").innerHTML = name.toLowerCase();
+    </script>
+</body>
+
+</html>
