@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange 1</title>
+</head>
+
+<body>
+
+    <script>
+        var name = prompt("Enter your name:");
+        var firstChar = name.slice(0, 1); //Slicing the first character
+        var upperCase = firstChar.toUpperCase();
+        var restofChar = name.slice(1, name.length);
+        var lowerCase = restofChar.toLowerCase();
+        // alert("Hello, " + upperCase + name.slice(1, 10)); //Not a good way as we don't know how much length of name user will give through a prompt
+        alert("Hello, " + upperCase + lowerCase);
+    </script>
+</body>
+
+</html>
