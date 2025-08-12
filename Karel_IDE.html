@@ -1,0 +1,35 @@
+function main(){
+   rowOne();
+   back2Start();
+
+}
+function rowOne(){
+   putBeeper();
+   crossUp();
+   crossDown();
+   turnLeft();
+   crossUp();
+   crossDown();
+   }
+   
+function back2Start(){
+   turnRight();
+   move();
+   move();
+   move();
+   move();
+   
+}
+function crossUp(){
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+}
+function crossDown(){
+   move();
+   turnRight();
+   move();
+   putBeeper();
+}
