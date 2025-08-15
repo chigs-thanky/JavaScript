@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors of Functions</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        //Function Calling
+        var num = prompt("How many bottles you want to buy?");
+        getMilk(num);
+
+        //Function Declaration
+        function getMilk(bottles) {
+            var cost = bottles * 67;
+            document.getElementById("demo").innerHTML = "Cost of "+ num + " bottles: Rs." + cost;
+        }
+    </script>
+</body>
+
+</html>
