@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Objects</h1>
+    <h2>Object Constructors</h2>
+
+    <p id="demo1"></p>
+    <p id="demo"></p>
+
+    <script>
+
+        // Constructor function for Person objects
+        function Person(first, last, age, date) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.lastDate = date;
+        }
+
+        // Create two Person objects
+        const myFather = new Person("Jitendrakumar", "Thanki", 54, "26/11/1995");
+        const myMother = new Person("Hansaben", "Joshi", 51, "04/12/2022");
+
+        // Display age
+        document.getElementById("demo1").innerHTML = "My mother's name was <strong><em>" + myMother.firstName + " " + myMother.lastName + "</strong></em>. She was " + myMother.age + " years old when she died on <strong>" + myMother.lastDate + "</strong>.";
+        document.getElementById("demo").innerHTML = "My father's name is <b>" + myFather.firstName + " " + myFather.lastName + "</b>. He is " + myFather.age + " years old and born on " + myFather.lastDate;
+
+    </script>
+
+</body>
+
+</html>
