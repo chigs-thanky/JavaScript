@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Flavor Complex</title>
+</head>
+
+<body>
+    <script>
+        function getMilk(money) {//Here, we are giving $x money yo buy millk.
+            console.log("Leave the House");
+            console.log("Move Up");
+            console.log("Move Right");
+            console.log("Move Down");
+            console.log("Move Left");
+
+            // Now finding how many bottles of milk robot gets
+
+            // var numberofBottles = money / 1.5; //Here, $1.5 is the cost of 1 bottle
+
+            //This gives the answer 2.6666 which is correct but we can't buy 2.66 numbers of bottles. 
+
+            //So, we are rounding down 2.66 --> 2, using math.floor(); function
+
+
+            var numberofBottles = Math.floor(money / 1.5);
+            //Logging the output in the console
+            console.log("Buy " + numberofBottles + " bottles of milk.");
+
+            console.log("Move Down");
+            console.log("Move Left");
+            console.log("Move Up");
+            console.log("Move Right");
+            console.log("Return to Home");
+
+            return money % 1.5; //Gives the remainder for change in $.
+        }
+
+        var change = getMilk(5); //Buying bottles with worth of $4.
+        // var change = getMilk(prompt("Enter money: ")); //We can ask users to enter $ money using a prompt.
+        console.log("Change is: $" + change);
+    </script>
+</body>
+
+</html>
