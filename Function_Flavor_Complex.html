@@ -25,9 +25,12 @@
             //So, we are rounding down 2.66 --> 2, using math.floor(); function
 
 
-            var numberofBottles = Math.floor(money / 1.5);
+            // var numberofBottles = Math.floor(money / 1.5);
             //Logging the output in the console
-            console.log("Buy " + numberofBottles + " bottles of milk.");
+            // console.log("Buy " + numberofBottles + " bottles of milk.");
+
+            // Another Method using function
+            console.log("Buy " + calcBottles(money, 1.5) + " bottles of milk.");
 
             console.log("Move Down");
             console.log("Move Left");
@@ -35,12 +38,23 @@
             console.log("Move Right");
             console.log("Return to Home");
 
-            return money % 1.5; //Gives the remainder for change in $.
+            // return money % 1.5; //Gives the remainder for change in $.
+            return calcChange(money, 1.5);;
         }
+        console.log("Hello Master, here is your $" + getMilk(5) + " change.");
 
-        var change = getMilk(5); //Buying bottles with worth of $4.
+        function calcBottles(money, costperBottle) {
+            var numberofBottles = Math.floor(money / costperBottle);
+            return numberofBottles;
+        }
+        // var change = getMilk(8); //Buying bottles with worth of $4.
         // var change = getMilk(prompt("Enter money: ")); //We can ask users to enter $ money using a prompt.
-        console.log("Change is: $" + change);
+        // console.log("Change is: $" + change);
+
+        function calcChange(startingAmount, costperBottle) {
+            var change = startingAmount % costperBottle;
+            return change;
+        }
     </script>
 </body>
 
