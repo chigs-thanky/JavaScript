@@ -15,11 +15,13 @@
         function calcBMI(weight, height) {
             var heightInMetres = height / 100; // cm -> m
             var bmi = weight / (heightInMetres ** 2);
-            return bmi.toFixed(2); //Upto 2 decimal points
+            // var bmi = weight / Math.pow(heightInMetres, 2); //More corrected way
+            // return bmi.toFixed(2); //Upto 2 decimal points
+            return Math.round(bmi); //Round to nearest number
         }
         var bmi = calcBMI(weight, height);
         console.log("Your weight: " + weight + "kg");
-        console.log("Your height: " + height + "m");
+        console.log("Your height: " + height + "cm");
         console.log("your BMI is: " + bmi); //This is also works.
         console.log("your BMI with direct function calling is: " + calcBMI(weight, height));//You can write like this.
     </script>
