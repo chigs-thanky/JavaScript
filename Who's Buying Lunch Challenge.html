@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Buying Lunch Challenge</title>
+</head>
+
+<body>
+    <h1 id="show"></h1>
+    <script>
+        var nameList = ["Chigs", "Bunny", "Howy", "Simon", "John", "Daniel"];
+        console.log(nameList.length);
+        var listLength = nameList.length;
+        var randomPerson = Math.floor(Math.random() * listLength);
+        console.log(nameList[randomPerson] + " is going to buy lunch today!");//To see output in browser's console
+        document.getElementById("show").innerHTML = nameList[randomPerson] + " is going to buy lunch today!";
+    </script>
+</body>
+
+</html>
