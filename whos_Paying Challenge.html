@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Paying Challenge</title>
+</head>
+
+<body>
+    <script>
+        function whosPaying(names) {
+            //Write your code here
+            var akshay = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+            console.log(akshay.length);
+            var roundDown = Math.floor(Math.random() * akshay.length);
+            console.log(roundDown);
+            var billPay = akshay[roundDown];
+            console.log(billPay + " is going to buy lunch today!");
+
+        }
+        whosPaying();
+    </script>
+</body>
+
+</html>
