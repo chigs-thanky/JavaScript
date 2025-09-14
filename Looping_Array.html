@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>Looping an Array</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const names = ["Chirag", "Saurav", "Punit", "Kishan", "Ram", "Kana"];
+
+        const size = names.length;
+        names.sort(); //sorting names alphabetically
+        var output = "<ul>";
+        for (var i = 0; i < size; i++) {
+            output += "<li>" + names[i] + "</li>";
+        }
+        output += "</ul>";
+        // output = output.sort(); // Generates error because sort() method can only be appied for arrays, not the object
+        document.getElementById("demo").innerHTML = output;
+    </script>
+</body>
+
+</html>
