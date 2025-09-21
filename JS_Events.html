@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+
+<body>
+    <!-- Button Click -->
+    <button id="myButton">Click Me</button>
+
+    <!-- Key press -->
+    <input id="nameInput" placeholder="Type something..." />
+
+    <!-- Mouse Over -->
+    <div id="hoverBox" style="width:200px; height:100px; background:lightblue;">
+        Hover over me!
+    </div>
+
+    <!-- Form submission -->
+    <form id="myForm">
+        <input type="text" placeholder="Your name" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Input or Select value change -->
+    <select id="colorSelect">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+
+
+    <script>
+        // button
+        const btn = document.getElementById("myButton");
+
+        btn.addEventListener("click", function () {
+            alert("Button was clicked!");
+        });
+
+        // key press
+        document.getElementById("nameInput").addEventListener("keydown", function (event) {
+            console.log("You pressed:", event.key);
+        });
+
+
+        // Hover or MouseOVer
+        document.getElementById("hoverBox").addEventListener("mouseover", function () {
+            alert("Mouse is over the box!");
+        });
+
+        // Form submisson
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevents actual form submission
+            alert("Form was submitted!");
+        });
+
+        // Input or Select value change
+        document.getElementById("colorSelect").addEventListener("change", function () {
+            alert("Selected color: " + this.value);
+        });
+    </script>
+</body>
+
+</html>
