@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Attributes</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <!-- The value attribute
+        The input value attribute specifies an initial value for an input field: -->
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" value="Chirag">
+        <br><br>
+
+        <!-- The readonly attribute
+        The input readonly attribute specifies that an input field is read-only.
+        
+        A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).
+
+        The value of a read-only input field will be sent when submitting the form! -->
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" value="Thanky" readonly>
+        <br><br>
+
+        <!-- The disabled attribute
+        The input disabled attribute specifies that an input field should be disabled.
+
+        A disabled input field is unusable and un-clickable.
+
+        The value of a disabled input field will not be sent when submitting the form! -->
+        <label for="country_name">Country: </label>
+        <input type="text" name="country_name" id="country_name" disabled value="India">
+        <br><br>
+        <!-- The size Attribute
+        The input size attribute specifies the visible width, in characters, of an input field.
+
+        The default value for size is 20.
+
+        Note: The size attribute works with the following input types: text, search, tel, url, email, and password. -->
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" size="8">
+        <br><br>
+        <input type="submit" name="" id="">
+    </form>
+</body>
+
+</html>
