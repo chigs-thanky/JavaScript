@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Arrays</h1>
+<h2>The with() Method</h2>
+<p>This method is used to add elements at any place using index number</p>
+
+<p id="demo"></p>
+<h1 id="demo1"></h1>
+
+<script>
+const months = ["Januar", "Februar", "Mar", "April"];
+const myMonths = months.with(2, "March");
+
+const days = ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"];
+const myDays = days.with(2, "Wednesday");
+//days.push("Wendnesday");
+document.getElementById("demo").innerHTML = myMonths;
+document.getElementById("demo1").innerHTML = myDays.join(", ");
+</script>
+
+</body>
+</html>
