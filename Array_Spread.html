@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Spread</title>
+</head>
+<body>
+    <h1>The ... Operator</h1>
+    <p>The ... operator is used to join array elements</p>
+    <h2 id="demo" ></h2>
+    <h2 id="demo2" ></h2>
+
+    <script>
+        // Input
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+        // const arr3 = [...arr1, ...arr2];
+        // const arr3 = arr1 + arr2; //Not working
+        const arr3 = arr1.map((num, index) => num + arr2[index]);
+
+        const fName = ["Chigs", "Bunny", "Akshay"];
+        const lName = ["Thanky", "Mehta", "Sharma"];
+
+        // const fullName = [...fName, ...lName];
+        const fullName = fName.map((name, value) => name + " " + lName[value]);
+        // Output
+        document.getElementById("demo").innerHTML = arr3;
+        document.getElementById("demo2").innerHTML = fullName.join(",  &nbsp"); //&nbsp for extra space after comma;
+    </script>
+</body>
+</html>
