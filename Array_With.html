@@ -7,16 +7,24 @@
 
 <p id="demo"></p>
 <h1 id="demo1"></h1>
+<h1 id="demo2"></h1>
 
 <script>
 const months = ["Januar", "Februar", "Mar", "April"];
 const myMonths = months.with(2, "March");
-
 const days = ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"];
-const myDays = days.with(2, "Wednesday");
+const friends = ["Chigs", "Bunny", "Akshay"];
+
 //days.push("Wendnesday");
+const myDays = days.with(2, "Wednesday");
+// const myFriends = friends.push(2, "Kishan"); //Does not work
+// const myFriends = friends.with(2, "Kishan");
+const myFriends = friends.splice(2, 0, "Kishan");
 document.getElementById("demo").innerHTML = myMonths;
 document.getElementById("demo1").innerHTML = myDays.join(", ");
+// document.getElementById("demo2").innerHTML = friends.join(" - ");
+// document.getElementById("demo2").innerHTML = myFriends.join(" - ");
+document.getElementById("demo2").innerHTML = friends.join(" - ");
 </script>
 
 </body>
