@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Spread</title>
+</head>
+
+<body>
+    <h1>The ... Operator</h1>
+    <h2>The ... (Spread Operator) is used to add array elements.</h2>
+    <h3 id="demo"></h3>
+    <h3 id="demo2"></h3>
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "Dec"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+
+        document.getElementById("demo").innerHTML = year;
+        // Now to separate the output and format using join()
+        document.getElementById("demo").innerHTML = year.join(" - ");
+    </script>
+</body>
+
+</html>
