@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+
+<body>
+    <h1>Arithmetic operation using Map()</h1>
+    <h2>Array Map() is used to add element-wise arithmetic operations.</h2>
+    <h2 id="add"></h2>
+    <h2 id="sub"></h2>
+    <h2 id="mul"></h2>
+    <h2 id="div"></h2>
+
+    <script>
+        const a = [1, 2, 3];
+        const b = [4, 5, 6];
+        const add = a.map((num, value) => num + b[value]);
+        const sub = a.map((num, value) => num - b[value]);
+        const mul = a.map((num, value) => num * b[value]);
+        const div = a.map((num, value) => num / b[value]);
+
+        document.getElementById("add").innerHTML = add.join(", ");
+        document.getElementById("sub").innerHTML = sub.join(", ");
+        document.getElementById("mul").innerHTML = mul.join(", ");
+        document.getElementById("div").innerHTML = div.join(", ");
+    </script>
+</body>
+
+</html>
