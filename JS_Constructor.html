@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Functions</h2>
+    <p>In this example, myFunction is a function constructor:</p>
+
+    <p id="demo"></p>
+    <p id="show"></p>
+
+    <script>
+        function myFunction(arg1, arg2) {
+            this.firstName = arg1;
+            this.lastName = arg2;
+        }
+
+        function mySum(arg1, arg2) {
+            this.x = arg1;
+            this.y = arg2;
+        }
+        const myObj = new myFunction("John", "Doe")
+        document.getElementById("demo").innerHTML = myObj.firstName + " " + myObj.lastName;
+
+        const myObj2 = new mySum(5, 5);
+        document.getElementById("show").innerHTML = myObj2.x + myObj2.y;
+    </script>
+
+</body>
+
+</html>
