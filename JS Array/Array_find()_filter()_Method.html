@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Find() and Filter() Method</title>
+</head>
+
+<body>
+    <h1 id="demo1"></h1>
+    <h1 id="demo2"></h1>
+    <h1 id="demo3"></h1>
+    <script>
+        const numbers = [1, 12, 13, 14, 26];
+
+        //find() Method to get the first value
+        let first = numbers.find(myFirst);
+
+        //filter() method to get all elements according to condition
+        let filteredNumbers = numbers.filter(myFirst);
+
+        function myFirst(value) {
+            return value < 15;
+        }
+        let joined = filteredNumbers.join(",  ");
+        document.getElementById("demo1").innerHTML = first;
+        document.getElementById("demo2").innerHTML = joined;
+        document.getElementById("demo3").innerHTML = "After join( ): <u>" + filteredNumbers.join(" - ") + "</u>";
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The toString() Method</h2>
+
+    <p>The toString() method returns the elements of an array as a comma separated string:</p>
+
+    <p id="fruits"></p>
+    <p id="mylist"></p>
+
+    <script>
+        /* JavaScript automatically converts an array to a comma separated string when a primitive value is expected.
+        This is always the case when you try to output an array.
+        These two examples will produce the same result:*/
+
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        let myList = fruits.toString();
+        document.getElementById("fruits").innerHTML = fruits;
+        document.getElementById("mylist").innerHTML = myList;
+    </script>
+
+</body>
+
+</html>

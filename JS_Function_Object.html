@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Functions</h2>
+
+    <p>myObject.fullName() will return John Doe:</p>
+
+    <p id="demo"></p>
+    <h1 id="show"></h1>
+
+    <script>
+        const myObject = {
+            firstName: "John",
+            lastName: "Doe",
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        const person = {
+            firstName: "Chirag",
+            lastName: "Thanki",
+            // date: 12 - 11 - 1997, //Date String
+            date: new Date(1997, 10, 12), //Date Object
+            pob: "Advana",
+            fullName: function () {
+                return this.firstName + " " + this.lastName + " " + this.date + " " + this.pob;
+            }
+        }
+        document.getElementById("demo").innerHTML = myObject.fullName();
+
+        document.getElementById("show").innerHTML = person.fullName();
+    </script>
+
+</body>
+
+</html>

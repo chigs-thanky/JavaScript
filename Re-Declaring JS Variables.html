@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Declarating JS Variables</title>
+</head>
+
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+
+    <p id="carName"></p>
+    <p id="firstName"></p>
+    <p id="lastName"></p>
+
+    <script>
+        // If you re-declare a JavaScript variable declared with var, it will not lose its value.
+
+        // The variable carName will still have the value "Volvo" after the execution of these statements:
+
+        var carName = "Volvo";
+        var carName;
+
+        // But if you re-declare a JavaScript variable declared with let, it will lose its value.
+
+        let firstName = "Chigs";
+        // let firstName; // This will generate error
+
+        //Also varibles can't be redeclared if declare with const.
+        const lastName = "Thanky";
+        // const lastName;// This also will generate error.
+
+        document.getElementById("carName").innerHTML = carName;
+        document.getElementById("firstName").innerHTML = firstName;
+        document.getElementById("lastName").innerHTML = lastName;
+    </script>
+</body>
+
+</html>

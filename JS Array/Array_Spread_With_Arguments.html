@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Spread with Arguments</title>
+</head>
+
+<body>
+    <h1>Array Spread operator (...) can also be used to pass arguments to a function.</h1>
+    <h2 id="numbers"></h2>
+    <h3 id="min"></h3>
+    <h3 id="max"></h3>
+
+    <script>
+        const numbers = [23, 55, 21, 87, 56];
+        let min = Math.min(...numbers);
+        let max = Math.max(...numbers);
+
+        // document.getElementById("numbers").innerHTML = numbers;
+
+        // For proper formatting
+        const format = numbers.join(", ");
+        document.getElementById("numbers").innerHTML = format;
+        document.getElementById("min").innerHTML = "Min = " + min;
+        document.getElementById("max").innerHTML = "Max = " + max;
+    </script>
+</body>
+
+</html>

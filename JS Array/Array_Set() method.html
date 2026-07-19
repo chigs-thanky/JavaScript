@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Sets</h1>
+    <h2>The size Property</h2>
+    <p style="font-size:30px;">The <b><u>set() method</b></u> only stores unique values. Same value should not be
+        repeated.
+    <p id="demo"></p>
+    <h1 id="show"></h1>
+
+    <script>
+        // Create a new Set
+        const mySet = new Set(["a", "b", "c"]);
+        const set2 = new Set(["x", "y", "z", "z", "x", "y"]);
+
+        // Display size
+        document.getElementById("demo").innerHTML = "The set size is: " + mySet.size;
+        document.getElementById("show").innerHTML = "The set size is: " + set2.size;
+    </script>
+
+</body>
+
+</html>
